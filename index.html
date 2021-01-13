@@ -56,18 +56,25 @@
     </nav>
     <!-- ========== End Navbar ========== -->
 
+    <!-- ========== Start Result ========== -->
+    <section id="result_section"></section>
+    <!-- ========== End Result ========== -->
+
     <!-- ========== Start Search ========== -->
     <section id="search_section">
-      <div class="container text-center d-flex flex-column justify-content-center h-100">
-        <h1 class="title">Search Any Email Address</h1>
-        <h3 class="description">
-          <span class="text-emphasis">Start Here</span> - Look up the owner's name, photos and online
-          profiles. See what you find!
-        </h3>
+      <div
+        class="container text-center d-flex flex-column justify-content-center h-100"
+      >
+        <div id="search_message">
+          <h1 class="title">Search Any Email Address</h1>
+          <h3 class="description">
+            <span class="text-emphasis">Start Here</span> - Look up the owner's
+            name, photos and online profiles. See what you find!
+          </h3>
+        </div>
         <form id="email_search_form" class="text-left" action="#" method="get">
-          <div class="form-row align-items-center">
-            <div class="col-md-10">
-              <label class="sr-only" for="email">Name</label>
+          <div class="form-row">
+            <div class="col-md-10 col-sm-12">
               <input
                 type="text"
                 class="form-control"
@@ -76,16 +83,20 @@
                 placeholder="EMAIL"
                 required
               />
+              <div id="email_search_message" class="d-none"></div>
             </div>
-            <div class="col-md-2">
-              <button type="submit" class="btn cursor-hover"><span>GO!</span></button>
+            <div class="col-md-2 col-sm-12">
+              <button type="submit" class="btn cursor-hover">
+                <span>GO!</span>
+              </button>
             </div>
           </div>
-          <span id="email_search_message" class="d-none"></span>
         </form>
         <div class="d-flex search-lock">
           <img src="assets/PNGs/lock@2x.png" />
-          <p class="text-emphasis ml-3">Enter Any Email Address. They won't be notified.</p>
+          <p class="text-emphasis ml-3">
+            Enter Any Email Address. They won't be notified.
+          </p>
         </div>
       </div>
     </section>
@@ -95,48 +106,89 @@
     <section id="email_section">
       <div class="container">
         <h2 class="title">Reverse Email Lookup</h2>
-        <h3 class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
+        <h3 class="description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </h3>
         <div class="row email-options">
           <div class="col-md-6 d-flex align-items-center email-option">
-            <span class="d-flex align-items-center justify-content-center email-option-mark">1</span>
+            <span
+              class="d-flex align-items-center justify-content-center round-mark"
+              >1</span
+            >
             <div class="email-option-text">
               <h4 class="email-option-title">Lorem Ipsum</h4>
-              <p class="email-option-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="email-option-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
           </div>
           <div class="col-md-6 d-flex align-items-center email-option">
-            <span class="d-flex align-items-center justify-content-center email-option-mark">4</span>
+            <span
+              class="d-flex align-items-center justify-content-center round-mark"
+              >4</span
+            >
             <div class="email-option-text">
               <h4 class="email-option-title">Lorem Ipsum</h4>
-              <p class="email-option-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="email-option-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
           </div>
           <div class="col-md-6 d-flex align-items-center email-option">
-            <span class="d-flex align-items-center justify-content-center email-option-mark">2</span>
+            <span
+              class="d-flex align-items-center justify-content-center round-mark"
+              >2</span
+            >
             <div class="email-option-text">
               <h4 class="email-option-title">Lorem Ipsum</h4>
-              <p class="email-option-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="email-option-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
           </div>
           <div class="col-md-6 d-flex align-items-center email-option">
-            <span class="d-flex align-items-center justify-content-center email-option-mark">5</span>
+            <span
+              class="d-flex align-items-center justify-content-center round-mark"
+              >5</span
+            >
             <div class="email-option-text">
               <h4 class="email-option-title">Lorem Ipsum</h4>
-              <p class="email-option-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="email-option-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
           </div>
           <div class="col-md-6 d-flex align-items-center email-option">
-            <span class="d-flex align-items-center justify-content-center email-option-mark">3</span>
+            <span
+              class="d-flex align-items-center justify-content-center round-mark"
+              >3</span
+            >
             <div class="email-option-text">
               <h4 class="email-option-title">Lorem Ipsum</h4>
-              <p class="email-option-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="email-option-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
           </div>
           <div class="col-md-6 d-flex align-items-center email-option">
-            <span class="d-flex align-items-center justify-content-center email-option-mark">6</span>
+            <span
+              class="d-flex align-items-center justify-content-center round-mark"
+              >6</span
+            >
             <div class="email-option-text">
               <h4 class="email-option-title">Lorem Ipsum</h4>
-              <p class="email-option-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="email-option-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
           </div>
         </div>
@@ -146,7 +198,9 @@
 
     <!-- ========== Start Loading bar ========== -->
     <section id="loading_section" class="d-none">
-      <div class="d-flex justify-content-center align-items-center flex-column w-100 h-100">
+      <div
+        class="d-flex justify-content-center align-items-center flex-column w-100 h-100"
+      >
         <img src="assets/loading_spinner.gif" />
         <p>Please wait a moment...</p>
       </div>
@@ -154,14 +208,19 @@
     <!-- ========== End Loading bar ========== -->
 
     <!-- ========== Start Footer ========== -->
-        
+
     <footer class="footer">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-10 description">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
           </div>
-          <div class="col-md-2 terms">
+          <div class="terms text-center">
             <span><a href="#">Terms</a> | <a href="#">Privacy</a></span>
           </div>
         </div>

@@ -4,7 +4,7 @@ body {
 }
 
 .cursor-hover {
-  opacity: 1.0;
+  opacity: 1;
   cursor: pointer;
 }
 
@@ -13,11 +13,22 @@ body {
 }
 
 .cursor-hover:active {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .text-emphasis {
-  color: #F6BC25;
+  color: #f6bc25;
+}
+
+.round-mark {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #004a80;
+  font-family: HelveticaNeue-Bold;
+  font-size: 48px;
+  color: #f6bc25;
+  letter-spacing: 0;
 }
 
 /*************** Header Style ***************/
@@ -34,9 +45,9 @@ body {
 
 /*************** Search Style ***************/
 #search_section {
-  height: 380px;
   background-color: #004a80;
   color: #ffffff;
+  padding: 50px 0 95px 0px;
 }
 
 #search_section .title {
@@ -48,7 +59,7 @@ body {
 
 #search_section .description {
   font-size: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
   letter-spacing: 0;
   text-align: center;
   line-height: 29px;
@@ -59,43 +70,46 @@ body {
   font-family: HelveticaNeue-Bold;
 }
 
-#search_section form input, #search_section form .btn {
+#search_section form input,
+#search_section form .btn {
   height: 70px;
 }
 
 #search_section form input {
-  background: #FFFFFF;
-  box-shadow: inset 0 -1px 4px 0 rgba(0,0,0,0.20);
+  background: #ffffff;
+  box-shadow: inset 0 -1px 4px 0 rgba(0, 0, 0, 0.2);
   border-radius: 3px;
 }
 
 #search_section form input::placeholder {
   font-family: HelveticaNeue-Bold;
   font-size: 16px;
-  color: #9B9B9B;
+  color: #9b9b9b;
   letter-spacing: 2px;
   line-height: 18px;
 }
 
-#search_section form input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+#search_section form input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
   font-family: HelveticaNeue-Bold;
   font-size: 16px;
-  color: #9B9B9B;
+  color: #9b9b9b;
   letter-spacing: 2px;
   line-height: 18px;
 }
 
-#search_section form input::-ms-input-placeholder { /* Microsoft Edge */
+#search_section form input::-ms-input-placeholder {
+  /* Microsoft Edge */
   font-family: HelveticaNeue-Bold;
   font-size: 16px;
-  color: #9B9B9B;
+  color: #9b9b9b;
   letter-spacing: 2px;
   line-height: 18px;
 }
 
 #search_section form .btn {
-  background-image: linear-gradient(225deg, #F2DA56 0%, #F6BC25 100%);
-  box-shadow: 0 3px 0 0 #A6953B, inset 0 1px 0 0 #FFFFFF;
+  background-image: linear-gradient(225deg, #f2da56 0%, #f6bc25 100%);
+  box-shadow: 0 3px 0 0 #a6953b, inset 0 1px 0 0 #ffffff;
   border-radius: 6px;
   margin-left: 20px;
   width: calc(100% - 20px);
@@ -104,23 +118,24 @@ body {
 #search_section form .btn span {
   font-family: HelveticaNeue-Bold;
   font-size: 24px;
-  color: #004A80;
+  color: #004a80;
   letter-spacing: 1px;
   text-align: center;
 }
 
 #search_section #email_search_message {
-  background: #DC0015;
+  background: #dc0015;
   padding: 5px 8px;
   font-family: HelveticaNeue;
   font-size: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   letter-spacing: 0;
   line-height: 18px;
+  width: 270px;
 }
 
 #search_section .in-valid {
-  border: 3px solid #F0002F;
+  border: 3px solid #f0002f;
 }
 
 #search_section .search-lock {
@@ -136,18 +151,19 @@ body {
   font-family: HelveticaNeue-Bold;
   font-size: 16px;
   letter-spacing: 0;
+  margin-bottom: 0px;
 }
 
 /*************** Email Lookup Style ***************/
 #email_section {
   padding: 50px 0;
-  background-image: linear-gradient(0deg, #E6E6E6 0%, #FFFFFF 100%);
+  background-image: linear-gradient(0deg, #e6e6e6 0%, #ffffff 100%);
 }
 
 #email_section .title {
   font-family: HelveticaNeue-Bold;
   font-size: 52px;
-  color: #004A80;
+  color: #004a80;
   letter-spacing: 0;
   text-align: center;
   line-height: 70px;
@@ -156,7 +172,7 @@ body {
 #email_section .description {
   font-family: HelveticaNeue;
   font-size: 22px;
-  color: #4A4A4A;
+  color: #4a4a4a;
   letter-spacing: 0;
   line-height: 30px;
   margin-top: 20px;
@@ -170,17 +186,6 @@ body {
   margin-top: 30px;
 }
 
-#email_section .email-option .email-option-mark {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  background-color: #004A80;
-  font-family: HelveticaNeue-Bold;
-  font-size: 48px;
-  color: #F6BC25;
-  letter-spacing: 0;
-}
-
 #email_section .email-option .email-option-text {
   width: calc(100% - 130px);
   margin-left: 20px;
@@ -189,7 +194,7 @@ body {
 #email_section .email-option .email-option-title {
   font-family: HelveticaNeue-Bold;
   font-size: 22px;
-  color: #004A80;
+  color: #004a80;
   letter-spacing: 0;
 }
 
@@ -203,7 +208,7 @@ body {
 
 /*************** Loading Style ***************/
 #loading_section {
-  height: 890px;
+  padding: 300px 0px;
   background-color: #f7f7f7;
 }
 
@@ -215,30 +220,259 @@ body {
 #loading_section p {
   font-family: HelveticaNeue-Bold;
   font-size: 24px;
-  color: #004A80;
+  color: #004a80;
   letter-spacing: 0;
   text-align: center;
   margin-top: 28px;
 }
 
-/*************** Footer Style ***************/
-footer {
-  height: 68px;
-  padding: 25px 120px;
-  background: #FFFFFF;
+/*************** Result Style ***************/
+#result_section .failed-result {
+  padding: 220px 0px;
 }
 
-footer .desciprtion {
+#result_section .title {
+  font-family: HelveticaNeue-Bold;
+  font-size: 52px;
+  color: #004a80;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+#result_section .description {
+  font-family: HelveticaNeue;
+  font-size: 24px;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 32px;
+  margin-bottom: 0px;
+}
+
+#result_section .success-result {
+  padding: 30px 0px 90px;
+}
+
+#result_section .success-result .result-content {
+  padding: 40px;
+  background: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  margin-top: 30px;
+}
+
+#result_section .success-result .result-content .result-content-round {
+  width: calc(100% - 110px);
+  margin-left: 20px;
+}
+
+#result_section .success-result .result-content .result-content-round .name {
+  font-family: HelveticaNeue-Bold;
+  font-size: 32px;
+  color: #004a80;
+  letter-spacing: 0;
+}
+
+#result_section
+  .success-result
+  .result-content
+  .result-content-round
+  .sub-description {
+  font-family: HelveticaNeue;
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: 0px;
+}
+
+#result_section
+  .success-result
+  .result-content
+  .result-content-round
+  .phone-number {
+  color: #004a80;
+}
+
+#result_section
+  .success-result
+  .result-content
+  .result-content-round
+  .sub-title {
+  font-family: HelveticaNeue-Bold;
+  font-size: 22px;
+  color: #004a80;
+  letter-spacing: 0;
+}
+
+/*************** Footer Style ***************/
+footer {
+  padding: 25px 120px;
+  background: #ffffff;
+}
+
+footer .description {
   font-family: HelveticaNeue;
   font-size: 15px;
   color: #999999;
   letter-spacing: 0;
   line-height: 20px;
+  width: calc(100% - 140px);
+}
+
+footer .terms {
+  padding: 10px;
+  width: 140px;
 }
 
 footer .terms a {
   font-family: HelveticaNeue-Bold;
   font-size: 14px;
-  color: #004A80 !important;
+  color: #004a80 !important;
   letter-spacing: 0;
+}
+
+footer p {
+  margin-bottom: 0px;
+}
+
+/* 
+  ##Device = Tablets, Ipads
+*/
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  /* CSS */
+  .navbar {
+    height: 68px;
+  }
+
+  footer {
+    padding: 25px 20px;
+  }
+
+  footer .terms {
+    padding: 20px 10px;
+  }
+}
+
+/* 
+  ##Device = Most of Mobiles
+*/
+
+@media only screen and (max-width: 480px) {
+  /* CSS */
+  #search_section {
+    padding: 20px 10px 35px;
+  }
+
+  #search_section .col-sm-12 {
+    margin-bottom: 15px;
+  }
+
+  #search_section form .btn {
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  #search_section .title {
+    font-size: 38px;
+  }
+
+  #search_section .description {
+    font-size: 18px;
+  }
+
+  #search_section .search-lock {
+    margin-top: 15px;
+  }
+
+  #search_section .search-lock p {
+    margin-bottom: 0px;
+    text-align: left;
+  }
+
+  #search_section #email_search_message {
+    width: 100%;
+  }
+
+  #email_section {
+    padding: 30px 0px;
+  }
+
+  #email_section .title {
+    font-family: HelveticaNeue-Bold;
+    font-size: 38px;
+    color: #004a80;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  #email_section .description {
+    font-family: HelveticaNeue;
+    font-size: 18px;
+    color: #4a4a4a;
+    letter-spacing: 0;
+    line-height: 28px;
+  }
+
+  #loading_section {
+    padding: 100px 0px;
+  }
+
+  #result_section .success-result {
+    padding: 30px 20px 90px;
+  }
+
+  #result_section .title {
+    font-family: HelveticaNeue-Bold;
+    font-size: 38px;
+    color: #004a80;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  #result_section .description {
+    font-family: HelveticaNeue;
+    font-size: 18px;
+    color: #4a4a4a;
+    letter-spacing: 0;
+    line-height: 28px;
+  }
+
+  #result_section .success-result .result-content {
+    padding: 25px 15px;
+  }
+
+  #result_section .success-result .result-content .round-mark {
+    display: none !important;
+  }
+
+  #result_section .success-result .result-content .result-content-round {
+    width: 100%;
+    margin: unset;
+  }
+
+  #result_section .success-result .result-content .result-content-round .name {
+    font-size: 32px;
+  }
+
+  #result_section
+    .success-result
+    .result-content
+    .result-content-round
+    .sub-description {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  footer .d-flex {
+    flex-direction: column;
+  }
+
+  footer .description {
+    width: 100%;
+  }
 }
